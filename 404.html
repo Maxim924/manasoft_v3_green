@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#f6f7f9">
+  <title>Страница не найдена — Manasoft</title>
+  <base href="./">
+  <script>
+    // Apache can serve the error document at the original, nested URL.
+    if (location.protocol !== 'file:' && !location.pathname.endsWith('/404.html')) document.querySelector('base').href = '/';
+  </script>
+  <script src="theme.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="theme.css">
+</head>
+<body>
+  <main class="error-page">
+    <header class="error-header"></header>
+    <h1>Страница не найдена</h1>
+    <p>Проверьте адрес или выберите нужный раздел.</p>
+    <nav class="error-links" aria-label="Разделы сайта">
+      <a class="button" href="index.html">На главную</a>
+      <a href="products/index.html">Программы и цены</a>
+      <a href="contacts/index.html">Контакты</a>
+    </nav>
+  </main>
+</body>
+</html>

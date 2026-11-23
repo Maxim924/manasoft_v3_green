@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1680" height="900" viewBox="0 0 1680 900">
+  <defs>
+    <linearGradient id="sky" x2=".34" y2="1" gradientUnits="objectBoundingBox"><stop stop-color="#193530"/><stop offset=".55" stop-color="#7faaa0"/><stop offset="1" stop-color="#c7ccb2"/></linearGradient>
+    <radialGradient id="light" cx=".77" cy=".28" r=".59"><stop stop-color="#e9e2b1" stop-opacity=".8"/><stop offset=".46" stop-color="#a6c2ae" stop-opacity=".3"/><stop offset="1" stop-color="#49746a" stop-opacity="0"/></radialGradient>
+    <linearGradient id="far" x2="0" y2="1"><stop stop-color="#54796f"/><stop offset="1" stop-color="#8da99a"/></linearGradient>
+    <linearGradient id="ridge" x1="0" x2=".71" y2="1"><stop stop-color="#263f3a"/><stop offset=".58" stop-color="#4d7365"/><stop offset="1" stop-color="#86a899"/></linearGradient>
+    <linearGradient id="forest" x2=".5" y2="1"><stop stop-color="#314c40"/><stop offset=".7" stop-color="#102923"/><stop offset="1" stop-color="#0a1e19"/></linearGradient>
+    <linearGradient id="lake" x2="0" y2="1"><stop stop-color="#779b8b"/><stop offset=".5" stop-color="#244c43"/><stop offset="1" stop-color="#0b251f"/></linearGradient>
+    <linearGradient id="fog" x2="0" y2="1"><stop stop-color="#b9cdb7" stop-opacity="0"/><stop offset=".5" stop-color="#c7d6bd" stop-opacity=".5"/><stop offset="1" stop-color="#c7d6bd" stop-opacity="0"/></linearGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="19"/></filter>
+    <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".49" numOctaves="3" stitchTiles="stitch"/></filter>
+    <path id="pine" fill="currentColor" d="M0 0l6 17-3-1 7 14-5-1 10 16-9-2 12 17-15-3v13h-6V57l-15 3 12-17-9 2 10-16-5 1 7-14-3 1z"/>
+    <pattern id="trees" width="56" height="87" patternUnits="userSpaceOnUse"><g color="#17352c"><use href="#pine" x="10" y="8" transform="scale(.7)"/><use href="#pine" x="36" y="3"/><use href="#pine" x="55" y="25" transform="scale(.84)"/></g><use href="#pine" x="22" y="25" color="#28473a" transform="scale(.86)"/></pattern>
+    <path id="left" d="M0 254l72 38 40 30 37 5 56 48 51 12 82 72 77 22 58 48 74 16 68 43 70 15 108 53 115 42 90 50 50 152H0z"/>
+    <path id="right" d="M1680 258l-76 31-32 28-42 5-48 36-20 2-77 70-48 12-53 38-39 9-54 49-48 18-33 30-75 31-102 54-30 229h777z"/>
+    <clipPath id="woods"><use href="#left"/><use href="#right"/></clipPath>
+  </defs>
+  <path fill="url(#sky)" d="M0 0h1680v900H0z"/><path fill="url(#light)" d="M0 0h1680v900H0z"/>
+  <g fill="none" stroke="#b4d2bd" opacity=".21" stroke-width="1">
+    <path d="M1021 -29c21 204 187 231 342 240 158 9 251 44 364 172M1068-24c18 176 179 208 320 217 173 10 268 60 341 154M1118-19c17 148 158 181 299 194 142 14 233 56 309 127M1165-16c22 125 156 161 275 174 144 16 221 54 286 105M1217-10c34 102 135 134 247 150 114 16 201 51 261 89M1272-7c35 79 110 105 208 121 105 17 176 45 246 83M1322-4c36 61 103 84 187 100 88 17 145 39 219 73"/>
+  </g>
+  <path fill="url(#far)" d="M0 363l115-43 113 18 130-63 94 24 92-70 37 30 84 22 67 64 95-41 89 50 72-38 46-12 92-118 26 13 41-52 57 48 30-8 63 67 37 13 84 78 41 7 51 35 124-16v315H0z"/>
+  <path fill="#b6c9b2" opacity=".24" d="m1058 274 92-118 26 13 41-52 57 48 30-8 63 67 37 13 84 78-88-56-50-14-58-55-25 4-46-50-29 40-24 1-42 45z"/>
+  <path fill="url(#ridge)" d="M0 305l164-26 42 29 133 26 101 57 75 15 90 51 53-11 95 37 75-26 115 9 90-75 57-17 73-64 62 27 52-48 57 23 72-29 40 19 74-62 50 16v440H0z"/>
+  <path fill="url(#lake)" d="M649 550c144 10 230 33 342 20 53-6 107-16 204-26l134 356H242z"/>
+  <g fill="none" stroke="#9db8a3" stroke-opacity=".26"><path d="M493 784q336-42 665 8M556 758q241-35 575 6M633 727q210-20 431 0M674 706q206-19 421 0M737 685h300M763 666q109-5 235 2M799 643h171M665 813q194-14 391 10M522 863q452-23 611 15"/></g>
+  <g fill="url(#fog)" filter="url(#blur)"><path d="M290 340c172-69 297 7 441 14 249 12 440-78 736-28v102c-331-26-449 38-698 25-180-9-329-49-479-8z"/><path d="M176 489c252-57 422 38 687 29 239-8 439-87 702-66v106c-353 2-448 66-712 60-232-5-486-80-677-25z"/></g>
+  <use href="#left" fill="url(#forest)"/><use href="#right" fill="url(#forest)"/>
+  <path fill="url(#trees)" opacity=".72" clip-path="url(#woods)" d="M0 210h1680v690H0z"/>
+  <g fill="none" stroke="#9ab3a0" stroke-opacity=".2">
+    <path d="M0 356q118-19 239 69t192 108q155 31 326 132M0 376q116-16 227 67t200 110q162 36 303 106M0 398q117-6 214 61t208 113q140 33 281 99M0 424q122 0 205 56t190 108q170 43 281 97M0 453q133-9 205 52t169 98q167 39 274 96"/>
+    <path d="M1680 328q-159 22-226 105t-206 117q-125 41-218 114M1680 346q-158 31-221 111t-209 111-209 103M1680 367q-149 27-217 113t-207 109-196 92M1680 389q-143 27-206 111t-199 109-190 82M1680 414q-133 23-192 103t-196 111-181 77"/>
+  </g>
+  <g color="#0d241e"><use href="#pine" transform="translate(1645 435) scale(4.9)"/><use href="#pine" transform="translate(1566 526) scale(3.9)"/><use href="#pine" transform="translate(1500 565) scale(3.1)"/><use href="#pine" transform="translate(128 510) scale(4.3)"/><use href="#pine" transform="translate(56 433) scale(5.2)"/><use href="#pine" transform="translate(233 548) scale(3.6)"/></g>
+  <path d="M0 0h1680v900H0z" filter="url(#grain)" opacity=".13" style="mix-blend-mode:soft-light"/>
+</svg>
